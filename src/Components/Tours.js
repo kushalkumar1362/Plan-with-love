@@ -1,5 +1,5 @@
 import Card from "./Card";
-
+import "./Tours.css"
 function Tours({ tours, removeTour }) {
     return (
         <div className="container">
@@ -12,8 +12,7 @@ function Tours({ tours, removeTour }) {
                         <Card
                             key={tour.id}
                             {...tour}
-                            removeTour={removeTour}
-                        ></Card>
+                            removeTour={removeTour}></Card>
                     );
                 })}
             </div>
